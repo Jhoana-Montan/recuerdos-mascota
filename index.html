@@ -1,22 +1,92 @@
 <!DOCTYPE html> 
 <html lang="es"> 
-    <head> <meta charset="UTF-8">
-         <title>Recuerdos de Randy</title> 
-         <link rel="stylesheet" href="stilo.css"> </head> <body> 
+<head> 
+    <meta charset="UTF-8">
+    <title>Recuerdos de Randy</title> 
+    <link rel="stylesheet" href="stilo.css"> 
+</head> 
+
+<body> 
             
-             <h1> Recuerdos de mis Mascotas </h1> 
+<h1> Recuerdos de mis Mascotas </h1> 
          
-             <div class="contenedor"> 
+<div class="contenedor"> 
             
-             <div class="card"> 
-                <img src="img/randiVentana.png" alt="Randy"> 
-            </div> 
-            <div class="card"> 
-                <img src="img/recuerdo2/mile.png" alt="Gato"> 
-            </div> 
-             <div class="card"> 
-                <img src="img/randiPaleta.png" alt="Randy"> 
-            </div> 
-        </div> 
-    </body> 
-    </html>
+    <div class="card" onclick="abrirMosaico('m1')"> 
+        <img src="img/randiVentana.png" alt="Randy"> 
+    </div> 
+
+    <div class="card" onclick="abrirMosaico('m2')"> 
+        <img src="img/recuerdo2/mile.png" alt="Gato"> 
+    </div> 
+
+    <div class="card" onclick="abrirMosaico('m3')"> 
+        <img src="img/randiPaleta.png" alt="Randy"> 
+    </div> 
+
+</div> 
+
+<div id="m1" class="mosaico">
+    <div class="contenido">
+        <span class="cerrar" onclick="cerrarMosaico('m1')">✖</span>
+
+        <div class="grid">
+            <img src="img/recuerdo1/perro1.jpg">
+            <img src="img/perro2.jpg">
+            <img src="img/recuerdo1/perro3.jpg">
+            <img src="img/perro4.jpg">
+            <img src="img/perro5.jpg">
+            <img src="img/perro6.jpg">
+            <img src="img/perro7.jpg">
+            <img src="img/maite, miguel, randi.jpg">
+        </div>
+
+    </div>
+</div>
+
+<div id="m2" class="mosaico">
+    <div class="contenido">
+        <span class="cerrar" onclick="cerrarMosaico('m2')">✖</span>
+
+        <div class="grid grid6">
+            <img src="img/recuerdo2/mile.png"> 
+            <img src="img/recuerdo2/mi.jpg">
+            <img src="img/perro6.jpg">
+           <img src="img/perro7.jpg"> 
+             <img src="img/perro12.jpg">
+          <img src="img/recuerdo2/gato1.jpg">
+        </div>
+
+    </div>
+</div>
+
+<div id="m3" class="mosaico">
+    <div class="contenido">
+        <span class="cerrar" onclick="cerrarMosaico('m3')">✖</span>
+
+        <div class="grid">
+            <img src="img/perro13.jpg">
+            <img src="img/perro10.jpg">
+            <img src="img/perro11.jpg">
+            <img src="img/maite, miguel, randi.jpg">
+            <img src="img/maite y randi.jpg">
+            <img src="img/perro14.jpg">
+            <img src="img/perro15.jpg">
+            <img src="img/perro16.jpg">
+        </div>
+
+    </div>
+</div>
+
+<script>
+function abrirMosaico(id) {
+    document.getElementById(id).classList.add("activo");
+}
+
+function cerrarMosaico(id) {
+    document.getElementById(id).classList.remove("activo");
+}
+</script>
+
+</body> 
+</html>
