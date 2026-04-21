@@ -1,4 +1,4 @@
-body { 
+body {  
     margin: 0; 
     font-family: Arial, sans-serif; 
     text-align: center; 
@@ -66,25 +66,16 @@ h1 {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 85f567a5a220728cd2d454d3e8404d2dadf015d6
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1000px);
     gap: 20px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 85f567a5a220728cd2d454d3e8404d2dadf015d6
 .grid6 {
     grid-template-columns: repeat(3, 1200px);
     justify-content: center;
 }
-
 
 .grid img {
     width: 100%;
